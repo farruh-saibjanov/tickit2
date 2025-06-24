@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/icon-github.svg">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Conference ticket generator</title>
+</head>
+
+<body>
+  <div class="pattern-lines"></div>
+  <div class="pattern-circle"></div>
+  <div class="pattern-squiggly-line-top"></div>
+  <div class="pattern-squiggly-line-bottom"></div>
+
+  <div class="main">
+    <img src="assets/images/logo-full.svg" class="logo">
+
+    <h1 id="greeting">Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <p id="announce">
+      Secure your spot at next year's biggest coding conference.
+    </p>
+
+    <form id="form">
+      <div class="box">
+        <label>Upload Avatar</label>
+
+        <div id="dragZone">
+          <div class="button">
+            <img src="assets/images/icon-upload.svg" class="preview">
+          </div>
+          <p id="drag">Drag and drop or click to upload</p>
+
+          <div class="dragZone-btn" style="display: none;">
+            <button class="remove" type="button">Remove image</button>
+            <button class="change" type="button">Change image</button>
+          </div>
+        </div>
+
+        <div class="info-status">
+          <img src="assets/images/icon-info.svg" id="image-icon">
+          <p id="image-status">Upload your photo (JPG or PNG, max size: 500KB).</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <label>Full Name</label>
+
+        <input type="text" id="nameInput" placeholder="Name">
+
+        <div class="info-status">
+          <img src="" id="name-icon">
+          <p id="name-status"></p>
+        </div>
+      </div>
+
+      <div class="box">
+        <label>Email Address</label>
+
+        <input type="email" id="emailInput" placeholder="example@email.com">
+
+        <div class="info-status">
+          <img src="" id="email-icon">
+          <p id="email-status"></p>
+        </div>
+      </div>
+
+      <div class="box">
+        <label>GitHub Username</label>
+
+        <input type="text" id="usernameInput" placeholder="@yourgithubusername">
+
+        <div class="info-status">
+          <img src="" id="username-icon">
+          <p id="username-status"></p>
+        </div>
+      </div>
+
+      <button type="submit" class="generate-btn">Generate My Ticket</button>
+    </form>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
